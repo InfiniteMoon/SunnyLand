@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - CollectionGem
+  - CollectionCherry
+  - Enemy
+  - DeadLine
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2586035607
+    locked: 0
+  - name: Eviroment
+    uniqueID: 1651754237
+    locked: 0
+  - name: Back
+    uniqueID: 3409870619
+    locked: 0
+  - name: Props
+    uniqueID: 90792985
+    locked: 0
+  - name: Ground
+    uniqueID: 1802573753
+    locked: 0
+  - name: Player
+    uniqueID: 3280919921
+    locked: 0
+  - name: Frontground
+    uniqueID: 3868829055
+    locked: 0
+  - name: Front
+    uniqueID: 199619679
+    locked: 0
