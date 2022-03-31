@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coll: {fileID: 304982564253753663}
   speed: 8
-  jumpforce: 7
+  jumpforce: 8
   horizintalmove: 0
   facedirection: 0
   ground:
