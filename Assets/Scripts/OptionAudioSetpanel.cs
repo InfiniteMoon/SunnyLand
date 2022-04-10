@@ -24,7 +24,5 @@ public class OptionAudioSetpanel : Viewbase
     public override void Show()
     {
         base.Show();
-        slider_music.value = PlayerPrefs.GetFloat(Const.MusicVolume, 0);
-        slider_sound.value = PlayerPrefs.GetFloat(Const.SoundVolume, 0);
     }
 }
