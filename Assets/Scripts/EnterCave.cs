@@ -10,6 +10,7 @@ public class EnterCave : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            SoundManager.instance.EnterAudio();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
     }

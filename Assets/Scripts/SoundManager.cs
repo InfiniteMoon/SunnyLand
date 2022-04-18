@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance;
     public AudioSource audioSource;
     [SerializeField]
-    private AudioClip jumpAudio, hurtAudio, collectionAudio, fallAudio;
+    private AudioClip jumpAudio, hurtAudio, collectionAudio, fallAudio, enterAudio;
     // Update is called once per frame
     private void Awake()
     {
@@ -34,6 +34,12 @@ public class SoundManager : MonoBehaviour
     public void FallAudio()
     {
         audioSource.clip = fallAudio;
+        audioSource.Play();
+    }
+
+    public void EnterAudio()
+    {
+        audioSource.clip = enterAudio;
         audioSource.Play();
     }
 }
