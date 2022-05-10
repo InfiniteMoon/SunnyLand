@@ -454,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.128565, y: 0.06789858, z: -10}
+  m_LocalPosition: {x: -25.137194, y: 0.0679167, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3338,6 +3338,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1405540139 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 32498873, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+  m_PrefabInstance: {fileID: 7496682946212830653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1495783989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7496682947703555976, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
@@ -7225,6 +7236,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1693074352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 434059801, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+  m_PrefabInstance: {fileID: 7496682946212830653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1746187604
 GameObject:
   m_ObjectHideFlags: 0
@@ -7457,9 +7479,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: cdImage
+      value: 
+      objectReference: {fileID: 1405540139}
+    - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: gemNumber
       value: 
       objectReference: {fileID: 990601144}
+    - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: candyNumber
+      value: 
+      objectReference: {fileID: 1693074352}
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: cherryNumber
       value: 
@@ -8904,6 +8934,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1968751767, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968751767, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -164
+      objectReference: {fileID: 0}
     - target: {fileID: 7496682946769973416, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
