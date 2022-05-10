@@ -8,6 +8,8 @@ TagManager:
   - CollectionCherry
   - Enemy
   - DeadLine
+  - Spikes
+  - CollectionCandy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ladder
   - 
   - Ground
   - 
