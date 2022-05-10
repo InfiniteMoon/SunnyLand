@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             //jumpAudio.Play();
-           // SoundManager.instance.JumpAudio();
+           SoundManager.instance.JumpAudio();
             anim.SetBool("jumping", true);
             jumpcount -= 1;
             tapJump = false;
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             //jumpAudio.Play();
-            //SoundManager.instance.JumpAudio();
+            SoundManager.instance.JumpAudio();
             anim.SetBool("jumping", true);
             jumpcount -= 1;
             tapJump = false;
