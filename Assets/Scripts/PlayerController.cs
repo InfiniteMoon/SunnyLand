@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour
     private float lastDash = -10f;//上一次冲锋时间点
     public float dashCoolDown;
     public float dashSpeed;
-
+    public GameObject dashObjR;
+    public GameObject dashObjL;
 
     private float playerGravity;
     public Collider2D coll;
@@ -76,7 +77,7 @@ public class PlayerController : MonoBehaviour
         {
             isCrouch = false;
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetButtonDown("Dash") && !isCrouch)
         {
             if (Time.time >= (lastDash + dashCoolDown))
             {
@@ -339,8 +340,10 @@ public class PlayerController : MonoBehaviour
 
     void CheckAirStatus()
     {
+        /*
         isJumping = anim.GetBool("Jump");
         isFalling = anim.GetBool("Fall");
+        */
         isClimbing = anim.GetBool("Climbing");
     }
     void restart()
@@ -363,8 +366,17 @@ public class PlayerController : MonoBehaviour
     {
         if(isDashing)
         {
-            if(dashTimeLeft >0.001)
+            if(dashTimeLeft >0)
             {
+                if (facedirection > 0)
+                {
+                    dashObjR.SetActive(true);
+                }
+                else
+                {
+                    dashObjL.SetActive(true);
+                }
+                //dashObj.SetActive(true);
                 if(rb.velocity.y >0 && !isOnGround)
                 {
                     rb.velocity = new Vector2(dashSpeed * horizintalmove, jumpforce);
@@ -373,10 +385,12 @@ public class PlayerController : MonoBehaviour
 
                 dashTimeLeft -= Time.deltaTime;
 
-                ShadowPool.instance.GetFormPool();
+
             }
-            if (dashTimeLeft <= 0.001)
+            if (dashTimeLeft <= 0)
             {
+                dashObjR.SetActive(false);
+                dashObjL.SetActive(false);
                 isDashing = false;
                 if (!isOnGround)
                 {
