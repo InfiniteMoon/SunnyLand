@@ -920,6 +920,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &579842788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8507701958261036942, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+  m_PrefabInstance: {fileID: 1916871734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &606363357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,6 +1245,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &668234286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 434059801, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+  m_PrefabInstance: {fileID: 1916871734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &671875864 stripped
@@ -42755,10 +42777,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 10697337874393539, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 199619679
+      objectReference: {fileID: 0}
+    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 199619679
+      objectReference: {fileID: 0}
+    - target: {fileID: 10697338987444039, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: cdImage
+      value: 
+      objectReference: {fileID: 579842788}
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: gemNumber
       value: 
       objectReference: {fileID: 31205948}
+    - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: candyNumber
+      value: 
+      objectReference: {fileID: 668234286}
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: cherryNumber
       value: 

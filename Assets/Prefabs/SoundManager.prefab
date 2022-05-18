@@ -50,6 +50,7 @@ MonoBehaviour:
   collectionAudio: {fileID: 8300000, guid: 6de690f32bb8d764b8e0f97c7b27a7ad, type: 3}
   fallAudio: {fileID: 8300000, guid: 64f1672153d6ea74d9801a1c7c84accd, type: 3}
   enterAudio: {fileID: 8300000, guid: b9a09a781737f174da478e0a97c736e3, type: 3}
+  dashAudio: {fileID: 8300000, guid: 136cbe1f905f05846ab9f8f0a8b39dc0, type: 3}
 --- !u!82 &5620844892478193053
 AudioSource:
   m_ObjectHideFlags: 0

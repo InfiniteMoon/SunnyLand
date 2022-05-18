@@ -7,6 +7,7 @@ public class OptionPanel : Viewbase
     public Menu menuPanel;//菜单界面
     public OptionAudioSetpanel optionAudioSetpanel;//选项  音量设置
     public OptionOperatorPanel optionOperatorPanel;//选项  操作说明
+    public GameObject dashIcon;
     GameObject btn_audio;
     GameObject btn_operator;
     GameObject messagepanel;
@@ -14,6 +15,7 @@ public class OptionPanel : Viewbase
 
     private void Start()
     {
+        
         btn_audio= transform.Find("bg/btn_audio").gameObject;
         btn_operator=transform.Find("bg/btn_controller").gameObject;
         messagepanel = transform.Find("bg/MessagePanel").gameObject;
@@ -34,12 +36,14 @@ public class OptionPanel : Viewbase
 
     public void OnBackClick()
     {
-        if(optionAudioSetpanel.IsShow()||optionOperatorPanel.IsShow())
+        
+        if (optionAudioSetpanel.IsShow()||optionOperatorPanel.IsShow())
         {
             optionAudioSetpanel.Hide();
             optionOperatorPanel.Hide();
             //显示option界面
             HideOrShowOptionPanel(true);
+
         }
         else
         {
@@ -47,6 +51,7 @@ public class OptionPanel : Viewbase
             this.Hide();
             //显示menu
             menuPanel.Show();
+
         }
        
     }

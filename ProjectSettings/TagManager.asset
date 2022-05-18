@@ -10,6 +10,8 @@ TagManager:
   - DeadLine
   - Spikes
   - CollectionCandy
+  - Bullet
+  - BOSS
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - Ladder
   - 
   - Ground
-  - 
-  - 
+  - Obstacle
+  - Bullet
   - 
   - 
   - 

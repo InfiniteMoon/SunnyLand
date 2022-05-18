@@ -8,7 +8,7 @@ public class Menu : Viewbase
     public OptionPanel optionPanel;//选项界面
     public GameObject pauseMenu;
     public AudioMixer audioMixer;
-
+    public GameObject dashIcon;
 
 
     public void PlayGame()
@@ -35,6 +35,8 @@ public class Menu : Viewbase
 
     public void PauseGame()
     {
+        Debug.Log("pause");
+        dashIcon.SetActive(false);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
 
@@ -59,6 +61,8 @@ public class Menu : Viewbase
 
     public void ResumeGame()
     {
+        
+        dashIcon.SetActive(true);
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }

@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             //jumpAudio.Play();
-           // SoundManager.instance.JumpAudio();
+            SoundManager.instance.JumpAudio();
             anim.SetBool("jumping", true);
             jumpcount -= 1;
             tapJump = false;
@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpforce);
             //jumpAudio.Play();
-            //SoundManager.instance.JumpAudio();
+            SoundManager.instance.JumpAudio();
             anim.SetBool("jumping", true);
             jumpcount -= 1;
             tapJump = false;
@@ -275,6 +275,27 @@ public class PlayerController : MonoBehaviour
                 isHurt = true;
             }
         }
+        if (collision.gameObject.tag == "Bullet")
+        {
+            SoundManager.instance.HurtAudio();
+            isHurt = true;
+            if (transform.position.x < collision.gameObject.transform.position.x)
+            {
+                rb.velocity = new Vector2(-6, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(6, rb.velocity.y);
+            }
+                collision.gameObject.SetActive(false);
+        }
+        if (collision.gameObject.tag == "BOSS")
+        {
+            if (transform.position.y > collision.transform.position.y && transform.position.y- collision.transform.position.y>2)
+            {
+                GameObject.Find("BOSS/boss sprite").GetComponent<BOSSController>().Hurt();
+            }
+        }
     }
     void Crouch()
     {
@@ -366,6 +387,7 @@ public class PlayerController : MonoBehaviour
     {
         if(isDashing)
         {
+            SoundManager.instance.DashAudio();
             if(dashTimeLeft >0)
             {
                 if (facedirection > 0)
