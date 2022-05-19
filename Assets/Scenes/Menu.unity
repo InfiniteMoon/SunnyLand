@@ -1287,6 +1287,7 @@ MonoBehaviour:
   optionPanel: {fileID: 1430340901}
   pauseMenu: {fileID: 0}
   audioMixer: {fileID: 0}
+  dashIcon: {fileID: 0}
 --- !u!95 &451551279
 Animator:
   serializedVersion: 3
@@ -3612,6 +3613,7 @@ MonoBehaviour:
   menuPanel: {fileID: 451551278}
   optionAudioSetpanel: {fileID: 2069731430}
   optionOperatorPanel: {fileID: 1169331216}
+  dashIcon: {fileID: 0}
 --- !u!1 &1432139755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,7 +4611,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8DF3\u8DC3\uFF1Aspace  or   up\n\u4E0B\u8E72\uFF1Adown\n\u5411\u5DE6\u79FB\u52A8\uFF1Aleft\n\u5411\u53F3\u79FB\u52A8\uFF1Aright"
+  m_Text: "\u8DF3\u8DC3\uFF1Aspace  or   up\n\u4E0B\u8E72\uFF1Adown\n\u5411\u5DE6\u79FB\u52A8\uFF1Aleft\n\u5411\u53F3\u79FB\u52A8\uFF1Aright\n\u51B2\u523A\uFF1A\u79FB\u52A8+J\n\u5403\u6A31\u6843\u6062\u590D\u751F\u547D"
 --- !u!222 &1883430790
 CanvasRenderer:
   m_ObjectHideFlags: 0

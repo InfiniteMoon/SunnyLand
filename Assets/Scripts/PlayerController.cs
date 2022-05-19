@@ -40,11 +40,13 @@ public class PlayerController : MonoBehaviour
     public float climbSpeed;
     public LayerMask ground;
     public LayerMask ladder;
+    public static int HP = 100;
     public static int cherry = 0;
     public static int gem = 0;
     public static int candy = 0;
     public int jumpcount;
     public BoxCollider2D crouchcoll;
+    public Slider HPslider;
     public Text cherryNumber;
     public Text gemNumber;
     public Text candyNumber;
@@ -66,6 +68,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isDie();
         horizintalmove = Input.GetAxis("Horizontal");
         facedirection = Input.GetAxisRaw("Horizontal");
         tapJump = Input.GetButtonDown("Jump");
@@ -94,6 +97,7 @@ public class PlayerController : MonoBehaviour
         isUnderGround = Physics2D.OverlapCircle(cellingCheck.position, 0.2f, ground);
         Jump();
         isLadder = coll.IsTouchingLayers(ladder);
+        HPslider.value = HP;
         cherryNumber.text = cherry.ToString();
         gemNumber.text = gem.ToString();
         candyNumber.text = candy.ToString();
@@ -197,13 +201,23 @@ public class PlayerController : MonoBehaviour
         //收集物品
         if (collision.tag == "CollectionCherry")
         {
+            if (HP > 50)
+            {
+                HP = 100;
+            }
+            else
+            {
+                HP += 50;
+            }
             //collectionAudio.Play();
             SoundManager.instance.CollectionAudio();
             collision.GetComponent<Animator>().Play("IsGot");
         }
         if (collision.tag == "CollectionGem")
         {
+            //dashTimeLeft-= 5;
             //collectionAudio.Play();
+            
             SoundManager.instance.CollectionAudio();
             collision.GetComponent<Animator>().Play("IsGot");
         }
@@ -223,6 +237,10 @@ public class PlayerController : MonoBehaviour
         //下落死亡
         if (collision.tag == "DeadLine")
         {
+            HP -= 10;//似乎实际效果为两倍
+            cherry = 0;
+            candy = 0;
+            gem = 0;
             GetComponent<AudioSource>().enabled = false;
             SoundManager.instance.FallAudio();
             Invoke("restart", 2f);
@@ -248,6 +266,7 @@ public class PlayerController : MonoBehaviour
                 else if (transform.position.x < collision.gameObject.transform.position.x)
                 {
                     //hurtAudio.Play();
+                    HP -= 10;
                     SoundManager.instance.HurtAudio();
                     rb.velocity = new Vector2(-4, rb.velocity.y);
                     isHurt = true;
@@ -255,6 +274,7 @@ public class PlayerController : MonoBehaviour
                 else if (transform.position.x > collision.gameObject.transform.position.x)
                 {
                     //hurtAudio.Play();
+                    HP -= 10;
                     SoundManager.instance.HurtAudio();
                     rb.velocity = new Vector2(4, rb.velocity.y);
                     isHurt = true;
@@ -263,6 +283,7 @@ public class PlayerController : MonoBehaviour
             else if (transform.position.x < collision.gameObject.transform.position.x)
             {
                 //hurtAudio.Play();
+                HP -= 10;
                 SoundManager.instance.HurtAudio();
                 rb.velocity = new Vector2(-2, rb.velocity.y);
                 isHurt = true;
@@ -270,6 +291,7 @@ public class PlayerController : MonoBehaviour
             else if (transform.position.x > collision.gameObject.transform.position.x)
             {
                 //hurtAudio.Play();
+                HP -= 10;
                 SoundManager.instance.HurtAudio();
                 rb.velocity = new Vector2(2, rb.velocity.y);
                 isHurt = true;
@@ -277,6 +299,7 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Bullet")
         {
+            HP -= 5;
             SoundManager.instance.HurtAudio();
             isHurt = true;
             if (transform.position.x < collision.gameObject.transform.position.x)
@@ -436,5 +459,17 @@ public class PlayerController : MonoBehaviour
     public void candyCount()
     {
         candy += 1;
+    }
+
+    public void isDie()
+    {
+        if(HP <= 0)
+        {
+            cherry = 0;
+            candy = 0;
+            gem = 0;
+            HP = 100;
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
