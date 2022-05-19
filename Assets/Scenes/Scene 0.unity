@@ -7483,22 +7483,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 199619679
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 199619679
-      objectReference: {fileID: 0}
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: cdImage
       value: 
@@ -7563,14 +7547,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 7238703842317887241, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
-    - target: {fileID: 7238703842317887241, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -2404215027317844453, guid: 62ff2780ee43347449e590a5ad9b83d7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
 --- !u!1 &2103454924

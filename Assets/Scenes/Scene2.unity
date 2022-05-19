@@ -1695,6 +1695,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1455036428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8507701956326487969, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+  m_PrefabInstance: {fileID: 1916871734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1476644931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2639,11 +2644,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7496682946156770276, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 361
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 7496682946156770276, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 176
+      value: 156
       objectReference: {fileID: 0}
     - target: {fileID: 7496682946769973416, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
       propertyPath: m_Pivot.x
@@ -2729,10 +2734,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7496682946769973419, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+      propertyPath: dashIcon
+      value: 
+      objectReference: {fileID: 1455036428}
     - target: {fileID: 7496682946769973420, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8793759985050420617, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
+      propertyPath: dashIcon
+      value: 
+      objectReference: {fileID: 1455036428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e7932e2a9a36aa44bd6c7d50163c98e, type: 3}
 --- !u!4 &1971375049 stripped
@@ -41795,6 +41808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 7238703842317887241, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
 --- !u!1 &3179716946778430873
