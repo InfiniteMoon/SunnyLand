@@ -448,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248722011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.096323, y: 3.0557103, z: -10}
+  m_LocalPosition: {x: -29.100473, y: 3.0556722, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21534,25 +21534,9 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697337874393565, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 199619679
-      objectReference: {fileID: 0}
     - target: {fileID: 10697338987444032, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 10697338987444033, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 199619679
       objectReference: {fileID: 0}
     - target: {fileID: 304982564253753649, guid: 7712c06baa82f6b419e8e12a07ca5b81, type: 3}
       propertyPath: cdImage

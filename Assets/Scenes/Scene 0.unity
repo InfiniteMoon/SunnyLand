@@ -465,7 +465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.12878, y: 0.32851395, z: -10}
+  m_LocalPosition: {x: -25.13293, y: 0.328523, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1100,6 +1100,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1101690916}
     m_Modifications:
+    - target: {fileID: 4605197244661443475, guid: c8548c9dcad80374c8c82f87fe901557, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4605197245176825897, guid: c8548c9dcad80374c8c82f87fe901557, type: 3}
       propertyPath: m_Name
       value: Frog

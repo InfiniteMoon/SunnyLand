@@ -35,7 +35,7 @@ public class Menu : Viewbase
 
     public void PauseGame()
     {
-        Debug.Log("pause");
+        //Debug.Log("pause");
         dashIcon.SetActive(false);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
